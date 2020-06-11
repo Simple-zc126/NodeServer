@@ -1,0 +1,24 @@
+{
+ "apps": [
+ {
+  "name": "mywork",
+  "cwd": "/",
+  "script": "main",
+  "log_date_format": "YYYY-MM-DD HH:mm Z",
+  "error_file": "log/node-server.log",
+  "out_file": "log/node-app.stdout.log",
+  "pid_file": "log/node-geo-api.pid",
+  "instances": 6,
+  "min_uptime": "200s",
+  "max_restarts": 10,
+  "max_memory_restart": "1M",
+  "cron_restart": "",
+  "watch": "../",
+  "merge_logs": true,
+  "exec_interpreter": "node",
+  "exec_mode": "fork",
+  "autorestart": true,
+  "vizion": false
+ }
+ ]
+}
